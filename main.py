@@ -56,8 +56,8 @@ class MyWidget(QWidget, Ui_Form):
         # self.check_dec()
 
         # подключение кнопок
-        self.yes_btn.clicked.connect(self.buttons)
-        self.no_btn.clicked.connect(self.buttons)
+        # self.yes_btn.clicked.connect(self.buttons)
+        # self.no_btn.clicked.connect(self.buttons)
         self.reset_btn.clicked.connect(self.buttons)
         self.apply_btn.clicked.connect(self.buttons)
         self.ok_btn.clicked.connect(self.buttons)
@@ -69,10 +69,10 @@ class MyWidget(QWidget, Ui_Form):
 
     # функции кнопок
     def buttons(self):
-        if self.sender() == self.yes_btn:
-            self.yes_lbl.setText(f"{int(self.yes_lbl.text()) + 1}")
-        if self.sender() == self.no_btn:
-            self.no_lbl.setText(f"{int(self.no_lbl.text()) + 1}")
+        # if self.sender() == self.yes_btn:
+        #     self.yes_lbl.setText(f"{int(self.yes_lbl.text()) + 1}")
+        # if self.sender() == self.no_btn:
+        #     self.no_lbl.setText(f"{int(self.no_lbl.text()) + 1}")
         if self.sender() == self.safe_btn:
             print('# Сохранение...')
             q_text = self.q_lbl.text()
